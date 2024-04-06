@@ -1,5 +1,30 @@
 <?php
 $output = null;
+$s1 = 'hello wrld';
+
+// strlen
+$output = strlen($s1);
+
+// str_word_count
+$output = str_word_count($s1);
+
+// strpos
+
+// string index
+$output = $s1[3];
+
+// substr
+$output = substr($s1, 6, 3);
+
+// str_replace
+
+// strtolower
+
+// strtoupper
+
+// ucwords
+$output = ucwords($s1);
+
 ?>
 
 <!DOCTYPE html>
