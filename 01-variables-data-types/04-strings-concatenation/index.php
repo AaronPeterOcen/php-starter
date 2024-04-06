@@ -1,5 +1,14 @@
+<?php
+$onename = 'ocen';
+$twoname = "aaron";
+// concatenation syntax
+$both = $onename . ' ' . $twoname
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 
 <head>
   <meta charset="UTF-8">
@@ -17,7 +26,8 @@
   <div class="container mx-auto p-4 mt-4">
     <div class="bg-white rounded-lg shadow-md p-6">
       <!-- Output -->
-
+      <?='my name is   '.$both . '<br/>' ?>
+      <?= 'hey my name is "peter"'?>
     </div>
   </div>
 </body>
