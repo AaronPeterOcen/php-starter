@@ -1,5 +1,41 @@
 <?php
 $output = null;
+
+// get year
+$output = date('Y');
+$output = date('Y', 990909000);
+
+
+$output = date('Y', strtotime('2001-14-01'));
+
+// get month
+$output = date('m');
+
+// get day
+$output = date('d');
+$output = date('l');
+
+// get month-day-year
+$output = date('Y-m-d');
+$output = date('m-d-Y');
+
+// get min
+$output = date('i');
+
+// get sec
+$output = date('s');
+
+// get time format
+$output = date('a');
+
+// all together
+$output = date('m-d-Y h:i:s a');
+
+
+
+
+
+
 ?>
 
 <!DOCTYPE html>
