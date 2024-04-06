@@ -27,7 +27,6 @@ $both = $onename . ' ' . $twoname
     <div class="bg-white rounded-lg shadow-md p-6">
       <!-- Output -->
       <?='my name is   '.$both . '<br/>' ?>
-      <?= 'hey my name is "peter"'?>
     </div>
   </div>
 </body>
