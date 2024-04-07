@@ -16,7 +16,6 @@ $users = [
   ['name'=> 'ocen', 'mail' => 'ocen@oxn.com', 'password' => '1233233'],
   ['name'=> 'aaron', 'mail' => 'aaron@oxn.com', 'password' => '1233233'],
   ['name'=> 'petern', 'mail' => 'petern@oxn.com', 'password' => '1233233'],
-
 ];
 
 $op = $users[1]['mail'];
