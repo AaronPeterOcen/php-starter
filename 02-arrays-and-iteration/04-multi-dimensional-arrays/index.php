@@ -1,5 +1,27 @@
 <?php
 $output = null;
+
+$fruits = [
+  ['apple', 'Red'],
+  ['mango', 'green'],
+  ['banana', 'yellow']
+];
+
+$op = $fruits[0][0];
+$fruits[] = ['grape', 'purple'];
+
+// $op = $fruits;
+
+$users = [
+  ['name'=> 'ocen', 'mail' => 'ocen@oxn.com', 'password' => '1233233'],
+  ['name'=> 'aaron', 'mail' => 'aaron@oxn.com', 'password' => '1233233'],
+  ['name'=> 'petern', 'mail' => 'petern@oxn.com', 'password' => '1233233'],
+
+];
+
+$op = $users[1]['mail'];
+
+
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +43,12 @@ $output = null;
   <div class="container mx-auto p-4 mt-4">
     <div class="bg-white rounded-lg shadow-md p-6 mt-6">
       <!-- Output -->
-      <p class="text-xl"><?= $output ?></p>
+      <p class="text-xl"><?= $op ?></p>
+      <p>
+        <pre>
+          <?php print_r($users) ?>
+        </pre>
+      </p>
     </div>
   </div>
 </body>

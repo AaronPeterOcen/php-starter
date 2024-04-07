@@ -1,5 +1,48 @@
 <?php
 $output = null;
+
+$ids = [1,2,9,4,10,6];
+$users = ['u4', 'u0', 'u3'];
+
+// count function
+$op =count($ids);
+
+// sort
+sort($ids);
+sort($users);
+
+// rsort
+rsort($ids);
+rsort($users);
+
+// array_push
+array_push($ids, 20);
+array_push($users, 'u2');
+
+// array_pop
+array_pop($ids);
+array_pop($users);
+
+// array-shift
+array_shift($ids);
+
+// array_slice
+// $i1 = array_slice($ids, 4, 3);
+// var_dump($i1);
+
+// array_splice
+
+// array_sum
+$op = 'sum of ids: '. array_sum($ids);
+
+// array_search
+$op = 'user is at index: '. array_search('u0', $users);
+
+// explode
+$tags = 'tech, code, program';
+$tagsarr = explode(',', $tags);
+var_dump($tagsarr);
+
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +65,16 @@ $output = null;
         <div class="bg-white rounded-lg shadow-md p-6 mt-6">
             <!-- Output -->
             <p class="text-xl"><?= $output ?></p>
+            <h2 class="text-xl font-semibold my-4">IDS Array:</h2>
             </p>
+            <pre>
+                <?php print_r($ids); ?>
+            </pre>
+            <h2 class="text-xl font-semibold my-4">Users Array:</h2>
+            </p>
+            <pre>
+                <?php print_r($users); ?>
+            </pre>
         </div>
     </div>
 </body>
