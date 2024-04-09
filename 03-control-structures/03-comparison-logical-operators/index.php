@@ -50,5 +50,7 @@ $c = 2;
 
 // var_dump($b == 1 && $c == 2);
 // var_dump($b == 1 || $c == 20);
-var_dump($b == 1 xor $c == 2);
+// var_dump($b == 1 xor $c == 2);
+var_dump($b == 1 && $c == 2);
+
 
