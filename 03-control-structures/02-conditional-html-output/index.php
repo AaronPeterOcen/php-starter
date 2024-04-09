@@ -1,5 +1,6 @@
 <?php
 $isloggedin = True;
+$name = 'true';
 ?>
 
 
@@ -23,6 +24,11 @@ $isloggedin = True;
     <div class="bg-white rounded-lg shadow-md p-6 mt-6">
       <!-- Output -->
       <?php if($isLoggedin) :?>
+        <?php if (isset($name)) : ?>
+          <h1 class="text-3xl">Welcome <?= $name ?></h1>
+        <?php else : ?>
+          <h1 class="text-3xl">Welcome to the app</h1>
+        <?php endif ;?>
       <h1 class="text-3xl">Welcome</h1>
       <?php else : ?>
       <h1 class="text-3xl">Login Please</h1>

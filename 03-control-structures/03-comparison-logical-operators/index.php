@@ -14,6 +14,23 @@
 | <=       | Less than or equal to    |
 | >=       | Greater than or equal to |
 */
+$a = 10;
+$y = '10';
+
+// var_dump($a == $y);
+// var_dump($a === $y);
+// var_dump($a != $y);
+// var_dump($a !== $y);
+// var_dump($a <> $y);
+// var_dump($a < $y);
+// var_dump($a >= $y);
+
+
+
+
+
+
+
 
 
 /*
@@ -27,3 +44,11 @@
 | xor      | True if one is true    |
 | !        | True if it is not true |
 */
+
+$b = 1;
+$c = 2;
+
+// var_dump($b == 1 && $c == 2);
+// var_dump($b == 1 || $c == 20);
+var_dump($b == 1 xor $c == 2);
+
