@@ -5,6 +5,7 @@ class User
   // Properties
   public $name;
   public $email;
+  protected $status;
 
   public function __construct($name, $email)
   {
@@ -16,6 +17,16 @@ class User
   public function login()
   {
     echo $this->name . ' logged in <br>';
+  }
+
+  // getter
+  public function getStatus() {
+    echo $this->status;
+  }
+
+  // setter
+  public function setStatus($status) {
+    $this->status = $status;
   }
 }
 
@@ -29,3 +40,8 @@ $user2 = new User('Jane Doe', 'jane@gmail.com');
 $user2->login();
 
 // var_dump($user2);
+
+$user2->setStatus('inactive');
+
+$user2->getStatus();
+// $user1->status;
